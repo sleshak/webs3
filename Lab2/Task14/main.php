@@ -1,8 +1,14 @@
 <?php
-    namespace App\Models;
+    
+    require_once __DIR__ . '/../Models/Cart.php';
+    require_once __DIR__ . '/../Models/Order.php';
+    require_once __DIR__ . '/../Models/Product.php';
+    require_once __DIR__ . '/../Models/User.php';
+
     use App\Models\Product;
     use App\Models\Cart;
-    require_once __DIR__ . '/../vendor/autoload.php';
+    use App\Models\Order;
+    use App\Models\User;
 
     $items = [
         new Product("Computer1", 100.00),
